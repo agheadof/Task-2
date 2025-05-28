@@ -1,0 +1,56 @@
+.navigate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 83vw;
+    margin: 0 auto;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+
+    .navigate-button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: white;
+        transition: all 0.3s;
+    }
+
+    .navigate-button:hover {
+        color: white;
+        background-color: #262626;
+    }
+
+    .navigate-title {
+        margin-top: 19px;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .navigate-text {
+        width: 42vw;
+        margin-bottom: 100px;
+    }
+
+    .navigate-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 85px;
+        column-gap: 40px;
+        margin-bottom: 200px;
+    }
+
+
+    @media screen and (max-width:768px) {
+        .navigate-cards {
+            grid-template-columns: 1fr;
+            margin-bottom: 80px;
+
+        }
+    }
+}
