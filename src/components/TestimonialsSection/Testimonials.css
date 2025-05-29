@@ -1,0 +1,90 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 83vw;
+    margin: 0 auto;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+
+    .testimonials-button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: white;
+        transition: all 0.3s;
+    }
+
+    .testimonials-button:hover {
+        color: white;
+        background-color: #262626;
+    }
+
+    .testimonials-title {
+        margin-top: 19px;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .testimonials-text {
+        width: 42vw;
+        margin-bottom: 100px;
+    }
+
+    .testimonials-cards {
+        display: flex;
+        column-gap: 40px;
+        margin-bottom: 200px;
+        position: relative;
+
+        button {
+            all: unset;
+            display: inline-block;
+
+            .testimonials-arrow {
+                border: 2px solid #262626;
+                border-radius: 8px;
+                background-color: #fff;
+                width: 54px;
+                height: 54px;
+            }
+            .testimonials-arrow:hover {
+                background-color: #FF8D4D;
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    @media screen and (max-width:1440px) {
+        .testimonials-cards {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .testimonials-cards {
+            grid-template-columns: 1fr;
+
+            button {
+                width: 54px;
+                height: 54px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;  
+            }
+            button.left{
+                transform: translate(-150%,80px);    
+            }
+             button.right{
+                transform: translate(50%,80px);    
+
+            }
+        }
+    }
+}
